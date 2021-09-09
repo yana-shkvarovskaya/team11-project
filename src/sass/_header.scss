@@ -1,0 +1,156 @@
+/*Section header*/
+.section-header {
+  background-color: #ffb8ca;
+  max-width: 1600px;
+  padding-top: 37px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 84px;
+  &__icon {
+    fill: #d41443;
+  }
+}
+
+.menu-nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  &__link {
+    text-decoration: none;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    align-items: center;
+
+    color: #ffffff;
+  }
+
+  &__link--current {
+    color: #d41443;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  &__btn {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    align-items: center;
+    text-align: center;
+
+    padding: 14px 53px 14px 37px;
+
+    color: #d41443;
+    background: #ffffff;
+    border-radius: 22px;
+    border: none;
+  }
+}
+
+.icecream {
+  padding-left: 115px;
+  margin-bottom: 19px;
+  &__title {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  &__title-passion {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 0.9;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #d41443;
+  }
+}
+.icecream-box {
+  &__btn {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+
+    align-items: center;
+    text-align: center;
+
+    padding: 5px 8px;
+    width: 102px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+  }
+  .products {
+    width: 102px;
+    color: #ffffff;
+    background: #d41443;
+    margin-right: 15px;
+
+    &:hover,
+    &:focus {
+      background: #c7133e;
+    }
+  }
+  .made {
+    width: 138px;
+    color: #d41443;
+    background: #ffffff;
+
+    &:hover,
+    &:focus {
+      background: #ecebeb;
+    }
+  }
+}
+
+.milk {
+  display: flex;
+  align-items: center;
+  &__image {
+    padding-left: 77px;
+  }
+
+  &__text {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+
+    color: #ffffff;
+
+    width: 200px;
+    height: 78px;
+
+    margin: 0;
+    padding-left: 30px;
+  }
+}

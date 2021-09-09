@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../sass/main.css">
 </head>
     <body>
         <header>
@@ -12,6 +13,12 @@
                 <div class="container">
                     <div class="main-menu">
                         <nav class="menu">
+                            <!--Logo-->
+                            <a class="menu__link" href="index.html" title="Logo">
+                                <svg class="menu__icon" width="199" height="50">
+                                    <use href="../images/symbol-defs.svg#icon-logo"></use>
+                                </svg>
+                            </a>
                             <!--Menu Nav-->
                             <ul class="menu-nav">
                                 <li class="menu-nav__item"><a class="menu-nav__link menu-nav__link--current" href="index.html"
@@ -22,15 +29,72 @@
                                 <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Our products">Our products</a></li>
                                 <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Contact">Contact</a></li>
                             </ul>
-                            <button class="menu-nav__button" type="button" data-modal-open>Buy now</button>
+                            <button class="menu-nav__btn" type="button" data-modal-open>Buy now</button>
                         </nav>
                         <div class="icecream">
-                            <h1>ice cream made with passion</h1>
-                            <button class="icecream__button-products" type="button">Products</button>
-                            <button class="icecream__button-made" type="button">How it’s made?</button>
+                            <h1 class="icecream__title">ice cream <br> made with <br> <span class="icecream__title-passion">passion</span></h1>
+                            <div class="icecream-box">
+                                <button class="icecream-box__btn products" type="button" href="#">Products</button>
+                                <button class="icecream-box__btn made" type="button" href="#">How it’s made?</button>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        <div class="milk">
+                            <img class="milk__image" 
+                                srcset="
+                                ../images/milk.png 1x"
+                                src="../images/milk.png" 
+                                alt="Milk" 
+                                width="188" 
+                            />
+                            <p class="milk__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        </div>
+                            <img class="ellipse" 
+                                srcset="
+                                ../images/ellipse.png 1x" 
+                                src="../images/ellipse.png" 
+                                alt="ellipse" 
+                                width="538" />
                     </div>
+
+                    <!-- Mobile-menu -->
+                    <div class="mobile">
+                        <!-- button-open -->
+                        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    
+                        <div class="menu-container js-menu-container" id="mobile-nav">
+                            <!-- button-close -->
+                            <button class="menu-toggle js-close-menu">
+                                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                    <path fill-rule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                    
+                            <!-- menu-container__mobile -->
+                            <div class="menu-container__mobile">
+                                <!-- mobile-nav -->
+                                <button class="menu-nav__button" type="button" data-modal-open>Buy now</button>
+                                <ul class="mobile-nav">
+                                    <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--current" href="index.html"
+                                            title="Home">Home</a></li>
+                                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="portfolio.html"
+                                            title="About us">About us</a></li>
+                                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="#" title="How it’s made?">How it’s made?</a></li>
+                                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="#" title="Our products">Our products</a></li>
+                                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="#" title="Contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                    </div>
+
                 </div>
             </section>  
         </header>      
