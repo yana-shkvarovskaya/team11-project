@@ -60,6 +60,24 @@
   }
 }
 
+.products__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin: -10px;
+  }
+
+  @media screen and (min-width: 1260px) {
+    display: flex;
+    justify-content: center;
+    margin: -15px;
+  }
+}
+
 .products__item {
   border-radius: $product-card-border;
   text-align: center;
@@ -69,17 +87,55 @@
       margin-bottom: 130px;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 3 * 20px) / 3);
+    margin: 10px;
+  }
+
+  @media screen and (min-width: 1260px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
 }
 
 .products__item-icecream {
   background-color: $main-hero-bg-color;
+
+  &::before {
+    display: inline-block;
+    content: '';
+    width: 249px;
+    height: 252px;
+    background-image: url(../images/icecream1.png);
+    margin-top: -113px;
+  }
 }
 
 .products__item-icecoffee {
   background-color: $bg-color-product-second;
+
+  &::before {
+    display: inline-block;
+    content: '';
+    width: 249px;
+    height: 252px;
+    background-image: url(../images/icecoffee1.png);
+    margin-top: -113px;
+  }
 }
+
 .products__item-milkshakes {
   background-color: $bg-color-product-third;
+
+  &::before {
+    display: inline-block;
+    content: '';
+    width: 249px;
+    height: 252px;
+    background-image: url(../images/milkshakes1.png);
+    margin-top: -113px;
+  }
 }
 
 .products__name {
@@ -89,11 +145,21 @@
   color: $main-bg-color;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  margin-top: 22px;
 
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
+    margin-bottom: 32px;
   }
+}
+
+.products__icon {
+  width: 26px;
+  height: 6px;
 }
 
 .products__info {
@@ -104,5 +170,13 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $main-bg-color;
-  margin: 0 39px 111px 41px;
+  margin: 30px 39px 111px 41px;
+
+  @media screen and (min-width: 768px) {
+    margin: 30px 11px 120px 11px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 32px 44px 152px 44px;
+  }
 }
