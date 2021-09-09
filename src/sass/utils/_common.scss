@@ -8,7 +8,7 @@ html {
     box-sizing: inherit;
   }
 
-  //Основные стили станицы
+  //Основные стили страницы
   .body{
       font-family: $main-font;
       letter-spacing: 0.04em;
@@ -48,28 +48,29 @@ html {
     
     @media screen and (min-width: 768px){
       font-size: 26px;
+      line-height: 1.15;
     }
 
     @media screen and (min-width: 1280px) {
       font-size: 58px;
-      line-height: 1.14;
+      line-height: 1.13;
     }
   }
 
   //Стили контейнера
   .container{
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
     width: 100%;
 
   
       @media screen and (min-width: 768px) {
         width: 768px;
-        padding: 0 10px;
+        padding: 0 34px;
       }
   
       @media screen and (min-width: 1280px) {
-        padding: 0 15px;  
+        padding: 0 112px;  
         width:  1280px;
       }
   }
