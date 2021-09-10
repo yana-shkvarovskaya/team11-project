@@ -1,18 +1,15 @@
 .products {
   margin-top: 121px;
   margin-bottom: 98px;
-  padding: 0 20px;
 
   @media screen and (min-width: 768px) {
     margin-top: 122px;
     margin-bottom: 112px;
-    padding: 0 34px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-top: 127px;
     margin-bottom: 119px;
-    padding: 0 116px;
   }
 }
 
@@ -95,6 +92,22 @@
     height: 252px;
     background-image: url(../images/icecream1.png);
     margin-top: -113px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/icecream2.png);
+      width: 220px;
+      height: 226px;
+      margin-top: -104px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/icecream3.png);
+      width: 335px;
+      height: 335px;
+      margin-top: -210px;
+    }
   }
 }
 
@@ -108,6 +121,22 @@
     height: 252px;
     background-image: url(../images/icecoffee1.png);
     margin-top: -113px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/icecoffee2.png);
+      width: 220px;
+      height: 226px;
+      margin-top: -104px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/icecoffee3.png);
+      width: 335px;
+      height: 335px;
+      margin-top: -210px;
+    }
   }
 }
 
@@ -121,6 +150,22 @@
     height: 252px;
     background-image: url(../images/milkshakes1.png);
     margin-top: -113px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/milkshakes2.png);
+      width: 220px;
+      height: 226px;
+      margin-top: -104px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/milkshakes3.png);
+      width: 335px;
+      height: 335px;
+      margin-top: -210px;
+    }
   }
 }
 
@@ -139,6 +184,7 @@
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
+    margin-top: 38px;
     margin-bottom: 32px;
   }
 }
