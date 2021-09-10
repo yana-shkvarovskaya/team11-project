@@ -70,6 +70,10 @@
     }
   }
 
+  @media screen and (max-width: 767px) {
+    max-width: 280px;
+  }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 3 * 20px) / 3);
     margin: 10px;
@@ -196,6 +200,7 @@
 
 .products__info {
   font-family: $main-font;
+  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.5;
@@ -206,10 +211,17 @@
 
   @media screen and (min-width: 768px) {
     margin: 30px 11px 40px 11px;
+    height: 124px;
+    overflow: hidden;
+    line-height: 1.78;
   }
 
   @media screen and (min-width: 1280px) {
+    font-size: 16px;
     margin: 32px 44px 62px 44px;
+    height: 106px;
+    overflow: hidden;
+    line-height: 1.75;
   }
 }
 
