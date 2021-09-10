@@ -17,8 +17,15 @@
 .galary__item {
   display: block;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
+  transform: scale(1);
+  transition: transform 500ms linear;
+  z-index: 1;
+  &:hover {
+    transform: scale(1.25);
+    z-index: 2;
+  }
 
   &--cell1 {
     grid-column: 1 / 2;
