@@ -1,5 +1,10 @@
 .advantages{
-   padding-bottom: 140px;
+    padding-bottom: 97px;
+
+    @media screen and (min-width:768px){
+    }
+   
+
    background-color: $second-bg-color;
 }
 .section__title-advantages{
@@ -21,6 +26,23 @@
 .advantages__item{
     width: 100%;
     text-align: left;
+    transform: rotate(2160deg) scale(0);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+    
+    &._active{
+        transform: rotate(0) scale(1);
+        opacity: 1;
+
+        &:nth-child(2) {
+            transition: all 0.4s ease 0.4s;
+          }
+        
+          &:nth-child(3) {
+            transition: all 0.4s ease 0.8s;
+          }
+    }
+
 
     @media (max-width: 767px){
         width: 230px;
