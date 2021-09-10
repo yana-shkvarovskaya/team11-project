@@ -72,6 +72,10 @@
 
   @media screen and (max-width: 767px) {
     max-width: 280px;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -98,6 +102,17 @@
     margin-top: -113px;
     background-position: center;
     background-repeat: no-repeat;
+    animation: rotateY 3000ms infinite alternate backwards ease-in-out 1000ms;
+
+    @keyframes rotateY {
+      0% {
+        transform: perspective(400px) rotateY(60deg);
+      }
+
+      100% {
+        transform: perspective(400px) rotateY(-60deg);
+      }
+    }
 
     @media screen and (min-width: 768px) {
       background-image: url(../images/icecream2.png);
@@ -127,6 +142,17 @@
     margin-top: -113px;
     background-position: center;
     background-repeat: no-repeat;
+    animation: rotateY 3000ms infinite alternate backwards ease-in-out 1000ms;
+
+    @keyframes rotateY {
+      0% {
+        transform: perspective(400px) rotateY(60deg);
+      }
+
+      100% {
+        transform: perspective(400px) rotateY(-60deg);
+      }
+    }
 
     @media screen and (min-width: 768px) {
       background-image: url(../images/icecoffee2.png);
@@ -156,6 +182,17 @@
     margin-top: -113px;
     background-position: center;
     background-repeat: no-repeat;
+    animation: rotateY 3000ms infinite alternate backwards ease-in-out 1000ms;
+
+    @keyframes rotateY {
+      0% {
+        transform: perspective(400px) rotateY(60deg);
+      }
+
+      100% {
+        transform: perspective(400px) rotateY(-60deg);
+      }
+    }
 
     @media screen and (min-width: 768px) {
       background-image: url(../images/milkshakes2.png);
