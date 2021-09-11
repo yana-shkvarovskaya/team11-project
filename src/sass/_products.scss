@@ -88,10 +88,15 @@
     margin: 15px;
     height: 525px;
   }
+
+  // &:hover {
+  //   box-shadow: 0 0 0 3px white, 0 0 0 5px $main-hero-bg-color;
+  // }
 }
 
 .products__item-icecream {
   background-color: $main-hero-bg-color;
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &::before {
     display: inline-block;
@@ -128,10 +133,16 @@
       margin-top: -210px;
     }
   }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 3px white, 0 0 0 5px $main-hero-bg-color;
+  }
 }
 
 .products__item-icecoffee {
   background-color: $bg-color-product-second;
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &::before {
     display: inline-block;
@@ -168,10 +179,16 @@
       margin-top: -210px;
     }
   }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 3px white, 0 0 0 5px $bg-color-product-second;
+  }
 }
 
 .products__item-milkshakes {
   background-color: $bg-color-product-third;
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &::before {
     display: inline-block;
@@ -208,6 +225,11 @@
       margin-top: -210px;
     }
   }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 3px white, 0 0 0 5px $bg-color-product-third;
+  }
 }
 
 .products__name {
@@ -228,6 +250,18 @@
     margin-top: 38px;
     margin-bottom: 32px;
   }
+
+  // &::after {
+  //   display: block;
+  //   content: ' ';
+  //   height: 6px;
+  //   outline: 2px solid red;
+  //   margin: 30px 0;
+  //   background-image: url('../images/products.svg#icon-Group-4-1');
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  // }
 }
 
 .products__icon {
