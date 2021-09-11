@@ -20,12 +20,12 @@
   margin-bottom: 15px;
   transform: scale(0) translateX(90%);
   transition: all 0.8s ease 0s;
-    opacity: 0;
+  opacity: 0;
 
-    &._active{
-      transform: scale(1) translateX(0);
-      opacity: 1;
-    }
+  &._active {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
 
   @media screen and (min-width: 1280px) {
     font-size: 30px;
@@ -41,12 +41,12 @@
 
   transform: scale(0) translateX(-90%);
   transition: all 0.8s ease 0s;
-    opacity: 0;
+  opacity: 0;
 
-    &._active{
-      transform: scale(1) translateX(0);
-      opacity: 1;
-    }
+  &._active {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
 
   @media screen and (min-width: 768px) {
     line-height: 1.125;
@@ -87,14 +87,14 @@
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 130px;
-    }  
+    }
   }
 
-  &._active{
+  &._active {
     transform: scale(1) translateX(0);
     transition: all 0.8s ease 0.5s;
     opacity: 1;
- 
+
     &:nth-child(2) {
         transition: all 0.8s ease 1.1s;
       }
@@ -103,7 +103,12 @@
         transition: all 0.8s ease 1.5s;
       }
     }
-    
+
+    &:nth-child(3) {
+      transition: all 0.8s ease 2.2s;
+    }
+  }
+
   @media screen and (max-width: 767px) {
     max-width: 280px;
     text-align: center;
@@ -123,9 +128,6 @@
     height: 525px;
   }
 
-  // &:hover {
-  //   box-shadow: 0 0 0 3px white, 0 0 0 5px $main-hero-bg-color;
-  // }
 }
 
 .products__item-icecream {
@@ -356,13 +358,11 @@
   overflow-y: scroll;
 }
 
-
 .backdrop--hidden {
   opacity: 0;
   pointer-events: none;
   visibility: initial;
 }
-
 
 .modal {
   position: fixed;
@@ -374,7 +374,6 @@
   border-radius: $hero-buttons-border;
   padding: 40px;
   text-align: center;
-  
 
   @media screen and (max-width: 767px) {
     min-height: 609px;
@@ -399,7 +398,7 @@
 .modal__icecoffee {
   background-color: $bg-color-product-second;
 }
-.modal__icemilkshakes {
+.modal__milkshakes {
   background-color: $bg-color-product-third;
 }
 
