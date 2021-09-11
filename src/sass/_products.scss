@@ -330,6 +330,11 @@
   }
 }
 
+.products__info-modal {
+  height: 200px;
+  font-size: 14px;
+}
+
 .button__products {
   background-color: $main-hero-bg-color;
   border: none;
@@ -407,7 +412,7 @@
   width: 30px;
   height: 30px;
   bottom: 30px;
-  left: 50%;
+  left: 48%;
   border-radius: 50%;
   align-items: center;
   background-color: $main-bg-color;
@@ -432,8 +437,8 @@
 }
 
 .modal__foto {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   text-align: center;
   align-items: center;
 }
