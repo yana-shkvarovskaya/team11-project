@@ -76,16 +76,21 @@
 
                 <img class="position-image__icecream"
                     srcset="
-                    ./images/icecream.png" 
+                    ./images/icecream.png 1x,
+                    ./images/icecream-mobile.png 2x"
                     src="./images/icecream.png" 
-                    alt="icecream" width="230" 
+                    alt="icecream" 
+                    width="100%" 
                 />
+
                 <img class="position-image__girl" 
                     srcset="
-                    ./images/girl.png" 
+                    ./images/girl.png"
                     src="./images/girl.png" 
-                    alt="girl" width="293" 
+                    alt="girl" 
+                    width="100%" 
                 />
+
                 <img class="position-image__sixteen" 
                     srcset="
                     ./images/16.png" 
@@ -135,7 +140,7 @@
                 <!-- menu-container__mobile -->
                 <div class="menu-container__mobile">
                     <!-- mobile-nav -->
-                    <button class="menu-nav__button mobile-button" type="button" data-modal-open>Buy now</button>
+                    <button class="mobile-button" type="button" data-modal-open>Buy now</button>
                     <ul class="mobile-nav">
                         <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--current"
                                 href="#" title="Home">Home</a></li>
