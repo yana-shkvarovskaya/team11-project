@@ -107,28 +107,27 @@
     &:nth-child(3) {
       transition: all 0.8s ease 2.2s;
     }
+    @media screen and (max-width: 767px) {
+      max-width: 280px;
+      text-align: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 3 * 20px) / 3);
+      margin: 10px;
+    }
+  
+    @media screen and (min-width: 1260px) {
+      flex-basis: calc((100% - 3 * 30px) / 3);
+      margin: 15px;
+      height: 525px;
+    }
   }
 
-  @media screen and (max-width: 767px) {
-    max-width: 280px;
-    text-align: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 3 * 20px) / 3);
-    margin: 10px;
-  }
-
-  @media screen and (min-width: 1260px) {
-    flex-basis: calc((100% - 3 * 30px) / 3);
-    margin: 15px;
-    height: 525px;
-  }
-
-}
 
 .products__item-icecream {
   background-color: $main-hero-bg-color;
