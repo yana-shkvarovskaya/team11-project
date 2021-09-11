@@ -166,7 +166,7 @@
     $text-title-color 20%
   );
   background-position: 0;
-  -webkit-background-clip: text;
+  // -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 4s infinite linear;
   animation-fill-mode: forwards;
