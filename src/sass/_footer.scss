@@ -66,6 +66,16 @@
     font-size: 58px;
     line-height: 1.14;
   }
+  transform: scale(0.5);
+  animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+}
+@keyframes bop {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .footer__socials {
   // margin-bottom: 43px;
@@ -149,6 +159,28 @@
 .footer__contact--tel {
   margin-left: 4px;
   color: $text-title-color;
+  background: linear-gradient(
+    to right,
+    $text-title-color 0,
+    $socials-bg-color 10%,
+    $text-title-color 20%
+  );
+  background-position: 0;
+  // -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s infinite linear;
+  animation-fill-mode: forwards;
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 280px;
+  }
 }
 .copyright {
   display: block;
