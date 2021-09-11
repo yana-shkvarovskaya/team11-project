@@ -322,7 +322,7 @@
   overflow-y: scroll;
 }
 
-.backdrop.is-hidden {
+.backdrop--hidden {
   opacity: 0;
   pointer-events: none;
   visibility: initial;
