@@ -7,7 +7,7 @@
 
 .section-header {
   background-color: $main-hero-bg-color;
-  max-width: 1280px;
+  width: 100%;
   padding-top: 37px;
   background-image: url('../images/ellipse.png');
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@
     margin-right: 35px;
   }
 
-  &__btn {
+  &__button {
     font-family: $main-font;
     font-style: normal;
     font-weight: 700;
@@ -74,6 +74,9 @@
     background: $main-bg-color;
     border-radius: 22px;
     border: none;
+    @media screen and (max-width: 467px) {
+      margin-top: 60px;
+    }
   }
 }
 
@@ -186,6 +189,7 @@
     }
     @media screen and (max-width: 479px) {
       display: none;
+      left: 0;
     }
   }
 
