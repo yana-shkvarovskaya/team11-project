@@ -11,7 +11,24 @@
                 <p class="products__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et. dolore magna
                         aliqua facilisis.</p>
-                <button type="button" class="button__products"><img src="/images/button-products.png" alt="Кнопка «button»"></button>
+                <button type="button" class="button__products" data-modal-open><img src="/images/button-products.png" alt="Кнопка «button»"></button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal modal__icecream">
+                        <img src="./images/icecream1.png" alt="Мороженое">
+                        <h3 class="products__name">Preparation</h3>
+                        <p class="products__info">
+                            In a small pot, simmer heavy cream, milk, sugar and salt until sugar completely dissolves, about 5 minutes.
+                            Remove pot from heat. In a separate bowl, whisk yolks. ... <br>
+                            Strain through a fine-mesh sieve into a bowl. Cool mixture to room temperature. Cover and chill at least 4
+                            hours or overnight.
+                        </p>
+                        <button data-modal-close class="modal__button-data">
+                            <svg class="modal__button-close">
+                                <use href=""></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </li>
             <li class="products__item products__item-icecoffee">
                 <h3 class="products__name">ice coffee</h3>
