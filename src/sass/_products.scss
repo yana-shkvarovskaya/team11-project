@@ -81,8 +81,8 @@
   text-align: center;
   height: 485px;
   transform: scale(0) translateX(-360%);
-  opacity: 0;
-  transition: all 0.8s ease 1s;
+    opacity: 0;
+    transition: all 0.8s ease 0.5s;
 
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
@@ -92,11 +92,16 @@
 
   &._active {
     transform: scale(1) translateX(0);
-    transition: all 0.8s ease 1s;
+    transition: all 0.8s ease 0.5s;
     opacity: 1;
 
     &:nth-child(2) {
-      transition: all 0.8s ease 1.6s;
+        transition: all 0.8s ease 1.1s;
+      }
+    
+      &:nth-child(3) {
+        transition: all 0.8s ease 1.5s;
+      }
     }
 
     &:nth-child(3) {
@@ -123,9 +128,6 @@
     height: 525px;
   }
 
-  // &:hover {
-  //   box-shadow: 0 0 0 3px white, 0 0 0 5px $main-hero-bg-color;
-  // }
 }
 
 .products__item-icecream {
