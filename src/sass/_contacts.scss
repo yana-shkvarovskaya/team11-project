@@ -1,0 +1,83 @@
+.contacts {
+  background-image: linear-gradient(to bottom, $main-bg-color 6.2% 6.2%, $second-bg-color 6.2% 80%);
+}
+
+.contacts__list {
+}
+
+.contacts__item {
+  margin: 0 auto;
+  padding: 43px 21px 43px 20px;
+  max-width: 220px;
+  background-color: $main-bg-color;
+  box-shadow: $box-shadow-contacts;
+  border-radius: 24px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.contacts__office {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $main-bg-color;
+  text-transform: uppercase;
+  border-radius: 4px;
+  width: 80px;
+  height: 16px;
+  background-color: $bg-color-product-second;
+  &--green {
+    width: 130px;
+    background-color: $bg-color-product-third;
+  }
+}
+.contacts__city {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+}
+.contacts__address {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: $second-text-color;
+}
+.schedule {
+  padding: 25px 0;
+  border-top: $quote-border;
+  border-bottom: $quote-border;
+}
+.schedule__item:first-child {
+  margin-bottom: 10px;
+}
+.schedule__days {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0;
+}
+.schedule__time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: $second-hero-bg-color;
+}
+.address {
+  margin-top: 25px;
+}
+.address__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: $second-text-color;
+}
