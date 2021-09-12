@@ -110,8 +110,8 @@
       to bottom,
       $quote-bg-color,
       $quote-bg-color 28px,
-      #e1e1e1 28px,
-      #e1e1e1 29.5px
+      $border-color 28px,
+      $border-color 29.5px
     );
 
     color: $main-text-color;
