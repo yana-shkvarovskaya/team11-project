@@ -122,10 +122,6 @@
     margin: 15px;
     height: 525px;
   }
-
-  // &:hover {
-  //   box-shadow: 0 0 0 3px white, 0 0 0 5px $main-hero-bg-color;
-  // }
 }
 
 .products__item-icecream {
@@ -137,7 +133,7 @@
     content: '';
     width: 249px;
     height: 252px;
-    background-image: url(../images/icecream1.png);
+    background-image: url('../images/icecream1.png');
     margin-top: -113px;
     background-position: center;
     background-repeat: no-repeat;
@@ -154,14 +150,14 @@
     }
 
     @media screen and (min-width: 768px) {
-      background-image: url(../images/icecream2.png);
+      background-image: url('../images/icecream2.png');
       width: 220px;
       height: 226px;
       margin-top: -104px;
     }
 
     @media screen and (min-width: 1280px) {
-      background-image: url(../images/icecream3.png);
+      background-image: url('../images/icecream3.png');
       width: 335px;
       height: 335px;
       margin-top: -210px;
@@ -183,7 +179,7 @@
     content: '';
     width: 249px;
     height: 252px;
-    background-image: url(../images/icecoffee1.png);
+    background-image: url('../images/icecoffee1.png');
     margin-top: -113px;
     background-position: center;
     background-repeat: no-repeat;
@@ -200,14 +196,14 @@
     }
 
     @media screen and (min-width: 768px) {
-      background-image: url(../images/icecoffee2.png);
+      background-image: url('../images/icecoffee2.png');
       width: 220px;
       height: 226px;
       margin-top: -104px;
     }
 
     @media screen and (min-width: 1280px) {
-      background-image: url(../images/icecoffee3.png);
+      background-image: url('../images/icecoffee3.png');
       width: 335px;
       height: 335px;
       margin-top: -210px;
@@ -229,7 +225,7 @@
     content: '';
     width: 249px;
     height: 252px;
-    background-image: url(../images/milkshakes1.png);
+    background-image: url('../images/milkshakes1.png');
     margin-top: -113px;
     background-position: center;
     background-repeat: no-repeat;
@@ -237,23 +233,23 @@
 
     @keyframes rotateY {
       0% {
-        transform: perspective(400px) rotateY(60deg);
+        transform: perspective(400px) rotateY(30deg);
       }
 
       100% {
-        transform: perspective(400px) rotateY(-60deg);
+        transform: perspective(400px) rotateY(-30deg);
       }
     }
 
     @media screen and (min-width: 768px) {
-      background-image: url(../images/milkshakes2.png);
+      background-image: url('../images/milkshakes2.png');
       width: 220px;
       height: 226px;
       margin-top: -104px;
     }
 
     @media screen and (min-width: 1280px) {
-      background-image: url(../images/milkshakes3.png);
+      background-image: url('../images/milkshakes3.png');
       width: 335px;
       height: 335px;
       margin-top: -210px;
@@ -291,7 +287,7 @@
   //   height: 6px;
   //   outline: 2px solid red;
   //   margin: 30px 0;
-  //   background-image: url('../images/products.svg#icon-Group-4-1');
+  //   background-image: url('../images/products.svg');
   //   background-size: contain;
   //   background-repeat: no-repeat;
   //   background-position: center;
