@@ -125,6 +125,40 @@
     background: $main-bg-color;
     border-radius: 22px;
     border: none;
+    cursor: pointer;
+    transition: background-color 1s linear;
+    -webkit-animation: pulsing 2s infinite;
+    animation: pulsing 2s infinite;
+
+    @-webkit-keyframes pulsing {
+      0% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+      }
+      50% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+      }
+      100% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+      }
+    }
+
+    @keyframes pulsing {
+      0% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+      }
+      50% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+      }
+      100% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+      }
+    }
 
     @media screen and (max-width: 767px) {
       display: none;
@@ -236,6 +270,7 @@
     border-radius: 20px;
     border: none;
     height: 40px;
+    cursor: pointer;
   }
   .product {
     color: $main-bg-color;
@@ -291,6 +326,14 @@
 
   &__button {
     background-color: $main-hero-bg-color;
+    border-radius: 50%;
+    transition: background-color 1s linear;
+    &:hover,
+    &:focus {
+      border-radius: 50%;
+      background: #ecebeb;
+    }
+    cursor: pointer;
     border: none;
     @media screen and (max-width: 1279px) {
       position: absolute;
@@ -481,6 +524,7 @@
   border-radius: 22px;
   border: none;
   margin: 60px 34px 19px 34px;
+  cursor: pointer;
 
   &::after {
     display: inline-block;
@@ -492,9 +536,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-
-    transition: 0.2s;
-    transform-origin: 50% 60%;
   }
 
   &:hover,
@@ -541,6 +582,7 @@
 
     color: $main-bg-color;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
