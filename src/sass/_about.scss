@@ -1,0 +1,303 @@
+@mixin Font-ff-fw-lh-fs-c($ff, $fw, $lh, $fs, $c) {
+    font-family: $ff;
+    font-weight: $fw;
+    line-height: $lh;
+    font-size: $fs;
+    color: $c;
+  }
+  
+  $color-title-font: #d41443;
+  $black-color-text: #000000;
+  $gray-color-text: #907e82;
+  
+  .how-its-made-wrapper {
+    padding-bottom: 139px;
+  }
+  
+  // Паддинги для секции
+  .how-its-made {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff5f6;
+    padding-top: 125px;
+    background-repeat: no-repeat;
+    background-size: auto 133px;
+    background-image: url('../images/how-its-made/how-its-made-mobile1.png'),
+      url('../images/how-its-made/how-its-made-mobile2.png');
+    background-position: 0px 766px, 100% 766px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/how-its-made/how-its-made-mobile1@2x.png'),
+        url('../images/how-its-made/how-its-made-mobile2@2x.png');
+    }
+    @media screen and (min-width: 768px) {
+      padding-top: 130px;
+      background-image: none;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 125px;
+      background-position: 0px 342px, 100% 342px;
+      background-size: auto 534px;
+      background-image: url('../images/how-its-made/how-its-made-desktop1.png'),
+        url('../images/how-its-made/how-its-made-desktop2.png');
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/how-its-made/how-its-made-desktop1@2x.png'),
+          url('../images/how-its-made/how-its-made-desktop2@2x.png');
+      }
+    }
+    // @media screen and (min-width: 1600px) {
+    //   background-image: none;
+    // }
+  }
+  
+  // Контейнер для секции
+  
+  .how-its-made{
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      @media screen and (min-width: 320px) {
+        max-width: 390px;
+      }
+      @media screen and (min-width: 768px) {
+        padding-left: 34px;
+        padding-right: 34px;
+        max-width: 768px;
+      }
+      @media screen and (min-width: 1280px) {
+        padding-left: 115px;
+        padding-right: 115px;
+        max-width: 1280px;
+      }
+    }
+  }
+  // Стили для названия секции
+  .how-its-made-title {
+    @include Font-ff-fw-lh-fs-c($h-font, normal, 1.15, 34px, $color-title-font);
+    margin-top: 0px;
+    margin-bottom: 26px;
+    padding-left: 40px;
+    padding-right: 40px;
+  
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+      font-size: 48px;
+      line-height: 1.14;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 55px;
+      font-size: 58px;
+      line-height: 1.14;
+      letter-spacing: 0.06em;
+    }
+  }
+  // Стили для подназвания секции
+  .how-its-made-subtitle {
+    @include Font-ff-fw-lh-fs-c($h-font, normal, 1.16, 18px, #ffa5ba);
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+  
+    text-align: center;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.15;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: 1.13;
+      letter-spacing: 0.04em;
+    }
+  }
+  //  Стили для картинки
+  .foto-cow {
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 46px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: 17px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 74px;
+    }
+  }
+  // Стиль для div с картинкой и текстом
+  .how-its-made-title-picture-text {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  // стили для div с текстом и кнопкой
+  .how-its-made-discription-button {
+    padding-left: 30px;
+    padding-right: 30px;
+    @media screen and (min-width: 768px) {
+      width: 48.7%;
+      padding-top: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 43.9%;
+    }
+  }
+  // Стили для текста
+  .how-its-made-discription1 {
+    @include Font-ff-fw-lh-fs-c($main-font, 500, 1.58, 12px, $black-color-text);
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.78;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 35px;
+      font-size: 16px;
+      line-height: 1.75;
+      letter-spacing: 0.04em;
+    }
+  }
+  .how-its-made-discription2 {
+    margin-bottom: 15px;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 20px;
+    }
+  }
+  .how-its-made-discription3 {
+    margin-bottom: 21px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 62px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 45px;
+    }
+  }
+  
+  .how-its-made-discription2,
+  .how-its-made-discription3 {
+    @include Font-ff-fw-lh-fs-c($main-font, 500, 1.58, 12px, $gray-color-text);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.78;
+      letter-spacing: 0.04em;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.92;
+    }
+  }
+  // Кнопка
+  .how-its-made-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    border: none;
+    @include Font-ff-fw-lh-fs-c(
+      $main-font,
+      bold,
+      1.33,
+      15.8px,
+      $color-title-font
+    );
+    padding-right: 37px;
+    padding-left: 37px;
+    border-radius: 22px;
+    background-color: #ffffff;
+  }
+  //  Свг в кнопке
+  .how-its-made-svg {
+    width: 10px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  //  стили для списка
+  .how-its-made-list {
+    padding-right: 50px;
+    margin-top: 39px;
+    background-position: 0px 0px, 0px 195px, 0px 389px;
+    background-size: 33px 50px, 50px 50px, 44px 50px;
+    background-repeat: no-repeat;
+    background-image: url(../images/how-its-made/glass.png),
+      url(../images/how-its-made/apple.png), url(../images/how-its-made/heart.png);
+  
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/how-its-made/glass@2x.png),
+        url(../images/how-its-made/apple@2x.png),
+        url(../images/how-its-made/heart@2x.png);
+    }
+    @media screen and (min-width: 768px) {
+      padding-right: 0px;
+      display: flex;
+      margin-top: 66px;
+      background-position: 0px 0px, 240px 0px, 480px 0px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-top: 39px;
+      background-position: 0px 0px, 360px 0px, 720px 0px;
+    }
+  }
+  .how-its-made-number {
+    @include Font-ff-fw-lh-fs-c($h-font, normal, 1.14, 36px, $color-title-font);
+    display: block;
+    margin-bottom: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+    }
+  }
+  .how-its-made-text {
+    @include Font-ff-fw-lh-fs-c($main-font, bold, 1.66, 12px, $black-color-text);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.75;
+      letter-spacing: 0.02em;
+    }
+  }
+  // отступы для элементов списка
+  .how-its-made-item {
+    padding-top: 66px;
+    @media screen and (max-width: 767px) {
+      height: 156px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 180px;
+      padding-top: 86px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 330px;
+      padding-top: 90px;
+    }
+  }
+  .how-its-made-item:not(:last-child) {
+    margin-bottom: 38px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+      margin-right: 60px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 30px;
+    }
+  }
