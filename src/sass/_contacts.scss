@@ -34,6 +34,7 @@
   background-color: $main-bg-color;
   box-shadow: $box-shadow-contacts;
   border-radius: 24px;
+  transition: transform 1500ms;
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
@@ -51,6 +52,12 @@
     padding: 51px 44px 62px 43px;
     max-width: 330px;
   }
+}
+.contacts__item:hover,
+.contacts__item:focus {
+  transform: scale(1.25);
+  background-color: $second-bg-color;
+  box-shadow: 0px 5px 30px $second-hero-bg-color;
 }
 
 .contacts__office {
