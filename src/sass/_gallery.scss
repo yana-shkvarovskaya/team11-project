@@ -2,6 +2,10 @@
   background-image: linear-gradient(to bottom, $second-bg-color, $main-bg-color);
   min-width: 280px;
   min-height: 122px;
+  padding-bottom: 80px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 121px;
+  }
 }
 
 .gallery__items {
@@ -14,16 +18,17 @@
   row-gap: 3px;
   column-gap: 3px;
 }
-.galary__item {
+.gallery__item {
   display: block;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
   transform: scale(1);
-  transition: transform 500ms linear;
+  transition: transform 700ms linear;
   z-index: 1;
   &:hover {
     transform: scale(1.25);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     z-index: 2;
   }
 

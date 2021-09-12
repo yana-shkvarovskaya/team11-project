@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IceCream</title>
+    <title>Pretty Cool Ice Cream</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
@@ -24,6 +24,7 @@
 <meta name="theme-color" content="#ffffff">
   </head>
   <body class="body">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/header.html"></include>
     <include src="./partials/products.html"></include>
@@ -35,22 +36,23 @@
     <include src="./partials/footer.html"></include>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
-    <script>
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-function topFunction() {
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0; 
-}
-    </script>
+    <script src="./js/advantages.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
-    <script src="./js/advantages.js"></script>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+              document.getElementById("myBtn").style.display = "block";
+          } else {
+              document.getElementById("myBtn").style.display = "none";
+          }
+      }
+      function topFunction() {
+          document.body.scrollTop = 0; 
+          document.documentElement.scrollTop = 0; 
+      }
+          </script>
   </body>
 </html>
