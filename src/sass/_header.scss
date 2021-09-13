@@ -568,7 +568,10 @@
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: 13.4px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 209px;
+    text-align: center;
   }
   @media screen and (min-width: 1280px) {
     margin-left: 13.62px;
@@ -599,7 +602,7 @@
     font-family: $main-font;
     font-style: normal;
     font-weight: 700;
-    font-size: 4.38vw; /*14px*/
+    font-size: 14px; /*4.38vw*/
     line-height: 1.29px;
     display: flex;
     align-items: center;
