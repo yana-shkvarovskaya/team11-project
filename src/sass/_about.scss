@@ -64,29 +64,29 @@
   pointer-events: none;
   visibility: initial;
 }
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: $hero-buttons-border;
-  padding: 40px;
-  text-align: center;
-  @media screen and (max-width: 767px) {
-    min-height: 609px;
-    width: 90%;
-  }
-  @media screen and (min-width: 768px) {
-    min-height: 609px;
-    min-width: 450px;
-  }
-  @media screen and (min-width: 1200px) {
-    height: 581px;
-    width: 528px;
-  }
-}
+// .modal {
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: $hero-buttons-border;
+//   padding: 40px;
+//   text-align: center;
+//   @media screen and (max-width: 767px) {
+//     min-height: 609px;
+//     width: 90%;
+//   }
+//   @media screen and (min-width: 768px) {
+//     min-height: 609px;
+//     min-width: 450px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     height: 581px;
+//     width: 528px;
+//   }
+// }
 
   .box-about__information {
     padding-left: 30px;
@@ -269,11 +269,11 @@
 
   // modal
 
-  .modal {
-    width: 670px;
-    height: 460px;
-    padding: 40px 60px;
-  }
+  // .modal {
+  //   width: 670px;
+  //   height: 460px;
+  //   padding: 40px 60px;
+  // }
 
   .modal__suptitle {
     font-size: 22px;
@@ -422,11 +422,11 @@
 
   // modal
 
-  .modal {
-    width: 900px;
-    height: 520px;
-    padding: 40px 80px;
-  }
+  // .modal {
+  //   width: 900px;
+  //   height: 520px;
+  //   padding: 40px 80px;
+  // }
 
   .modal__suptitle {
     font-size: 24px;
