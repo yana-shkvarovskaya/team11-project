@@ -28,14 +28,16 @@
   @media screen and (max-width: 479px) {
     background-image: url('../images/icecream-mobile.png');
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position-x: 80%;
+    background-position-y: 100%;
     padding-bottom: 160px;
     padding-top: 6px;
   }
   @media screen and (min-width: 480px) {
     background-image: url('../images/icecream-mobile.png');
     background-repeat: no-repeat;
-    background-position: right 32px bottom 0px;
+    background-position-x: 80%;
+    background-position-y: 100%;
     padding-bottom: 160px;
     padding-top: 6px;
   }
@@ -214,7 +216,7 @@
 
     @media screen and (max-width: 767px) {
       margin-bottom: 19px;
-      font-size: 8.13vw; /*26px*/
+      font-size: 26px; /*8.13vw*/
       line-height: 1.15;
     }
     @media screen and (min-width: 768px) {
@@ -238,7 +240,7 @@
 
     @media screen and (max-width: 767px) {
       margin-bottom: 19px;
-      font-size: 48px;/*6.23; /*48px*/
+      font-size: 48px; /*6.23; /*48px*/
       line-height: 0.96;
     }
     @media screen and (min-width: 768px) {
@@ -262,7 +264,7 @@
     font-size: 14px;
     line-height: 1.29;
 
-    @media screen and (max-width: 1279px){
+    @media screen and (max-width: 1279px) {
       font-size: 8px;
       line-height: 1.25;
       height: 24px;
@@ -273,7 +275,6 @@
 
     padding: 0 13px 0 13px;
 
-    
     border-radius: 20px;
     border: none;
     height: 40px;
@@ -283,8 +284,11 @@
     color: $main-bg-color;
     background: $text-title-color;
 
-    @media screen and (min-width: 1280px){
-    margin-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 15px;
     }
 
     &:hover,
@@ -295,6 +299,9 @@
   .made {
     color: $text-title-color;
     background: $main-bg-color;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
 
     &:hover,
     &:focus {
@@ -377,7 +384,7 @@
     left: 47%;
     width: 230px;
     @media screen and (min-width: 1280px) {
-      top: 16.9%;
+      top: 12%;
     }
   }
 
@@ -388,14 +395,14 @@
 
     @media screen and (min-width: 768px) {
       position: absolute;
-      top: 77.1%;
+      top: 76.3%;
       left: 75%;
       width: 168px;
     }
 
     @media screen and (min-width: 1280px) {
       position: absolute;
-      top: 75.2%;
+      top: 74.3%;
       left: 70%;
       width: 293px;
     }
@@ -475,7 +482,6 @@
 
   overflow-y: scroll;
 
-  
   @media (min-width: 1280px) {
     display: none;
   }
@@ -550,8 +556,6 @@
   margin: 60px 34px 19px 34px;
   cursor: pointer;
 
-  
-
   &::after {
     display: inline-block;
     margin-left: 8px;
@@ -569,12 +573,14 @@
     background-color: #ecebeb;
   }
 
-  @media screen and (min-width: 768px) {
-    margin-left: 13.4px;
+  @media screen and (max-width: 1279px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 209px;
+    text-align: center;
   }
   @media screen and (min-width: 1280px) {
     margin-left: 13.62px;
-
   }
 }
 
@@ -602,7 +608,7 @@
     font-family: $main-font;
     font-style: normal;
     font-weight: 700;
-    font-size: 4.38vw; /*14px*/
+    font-size: 14px; /*4.38vw*/
     line-height: 1.29px;
     display: flex;
     align-items: center;
