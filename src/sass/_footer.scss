@@ -66,15 +66,6 @@
   letter-spacing: 0.04em;
   width: 200px;
   color: $text-title-color;
-  transform: scale(0) translateX(-90%);
-  transition: all 0.8s ease 0s;
-  opacity: 0;
-
-  &._active {
-    transform: scale(1) translateX(0);
-    opacity: 1;
-  }
-
   @media screen and (min-width: 768px) {
     font-size: 48px;
     letter-spacing: 0.06em;
