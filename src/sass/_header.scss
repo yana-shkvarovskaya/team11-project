@@ -284,6 +284,9 @@
     color: $main-bg-color;
     background: $text-title-color;
 
+    padding-top: 5px;
+    padding-bottom: 5px;
+
     @media screen and (min-width: 1280px) {
       margin-right: 15px;
     }
@@ -296,6 +299,9 @@
   .made {
     color: $text-title-color;
     background: $main-bg-color;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
 
     &:hover,
     &:focus {
