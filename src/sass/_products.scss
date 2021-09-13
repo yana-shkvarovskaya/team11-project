@@ -372,8 +372,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 30px $main-hero-bg-color;
   border-radius: $hero-buttons-border;
   padding: 40px;
   text-align: center;
@@ -400,9 +399,11 @@
 
 .modal__icecoffee {
   background-color: $bg-color-product-second;
+  box-shadow: 0px 5px 30px $bg-color-product-second;
 }
 .modal__milkshakes {
   background-color: $bg-color-product-third;
+  box-shadow: 0px 5px 30px $bg-color-product-third;
 }
 
 .modal__button-data {
