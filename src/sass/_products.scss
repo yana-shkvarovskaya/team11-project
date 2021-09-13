@@ -1,15 +1,15 @@
 .products {
-  margin-top: 121px;
-  margin-bottom: 98px;
+  padding-top: 121px;
+  padding-bottom: 98px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 122px;
-    margin-bottom: 112px;
+    padding-top: 122px;
+    padding-bottom: 112px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: 127px;
-    margin-bottom: 119px;
+    padding-top: 127px;
+    padding-bottom: 119px;
   }
 }
 
@@ -18,6 +18,14 @@
   padding: 0;
   margin: 0;
   margin-bottom: 15px;
+  transform: scale(0) translateX(90%);
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+
+  &._active {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
 
   @media screen and (min-width: 1280px) {
     font-size: 30px;
@@ -30,6 +38,15 @@
   padding: 0;
   margin: 0;
   margin-bottom: 144px;
+
+  transform: scale(0) translateX(-90%);
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+
+  &._active {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
 
   @media screen and (min-width: 768px) {
     line-height: 1.125;
@@ -63,6 +80,9 @@
   border-radius: $product-card-border;
   text-align: center;
   height: 485px;
+  transform: scale(0) translateX(-360%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
@@ -70,35 +90,50 @@
     }
   }
 
-  @media screen and (max-width: 767px) {
-    max-width: 280px;
-    text-align: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  &._active {
+    transform: scale(1) translateX(0);
+    transition: all 0.8s ease 0s;
+    opacity: 1;
 
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 3 * 20px) / 3);
-    margin: 10px;
-  }
+    &:nth-child(2) {
+      transition: all 0.8s ease 0.3s;
+    }
 
-  @media screen and (min-width: 1260px) {
-    flex-basis: calc((100% - 3 * 30px) / 3);
-    margin: 15px;
-    height: 525px;
+    &:nth-child(3) {
+      transition: all 0.8s ease 0.6s;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 280px;
+      text-align: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 3 * 20px) / 3);
+      margin: 10px;
+    }
+
+    @media screen and (min-width: 1260px) {
+      flex-basis: calc((100% - 3 * 30px) / 3);
+      margin: 15px;
+      height: 525px;
+    }
   }
 }
 
 .products__item-icecream {
   background-color: $main-hero-bg-color;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &::before {
     display: inline-block;
     content: '';
     width: 249px;
     height: 252px;
-    background-image: url(../images/icecream1.png);
+    background-image: url('../images/icecream1.png');
     margin-top: -113px;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,30 +150,36 @@
     }
 
     @media screen and (min-width: 768px) {
-      background-image: url(../images/icecream2.png);
+      background-image: url('../images/icecream2.png');
       width: 220px;
       height: 226px;
       margin-top: -104px;
     }
 
     @media screen and (min-width: 1280px) {
-      background-image: url(../images/icecream3.png);
+      background-image: url('../images/icecream3.png');
       width: 335px;
       height: 335px;
       margin-top: -210px;
     }
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 3px white, 0 0 0 5px $main-hero-bg-color;
   }
 }
 
 .products__item-icecoffee {
   background-color: $bg-color-product-second;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &::before {
     display: inline-block;
     content: '';
     width: 249px;
     height: 252px;
-    background-image: url(../images/icecoffee1.png);
+    background-image: url('../images/icecoffee1.png');
     margin-top: -113px;
     background-position: center;
     background-repeat: no-repeat;
@@ -155,30 +196,36 @@
     }
 
     @media screen and (min-width: 768px) {
-      background-image: url(../images/icecoffee2.png);
+      background-image: url('../images/icecoffee2.png');
       width: 220px;
       height: 226px;
       margin-top: -104px;
     }
 
     @media screen and (min-width: 1280px) {
-      background-image: url(../images/icecoffee3.png);
+      background-image: url('../images/icecoffee3.png');
       width: 335px;
       height: 335px;
       margin-top: -210px;
     }
   }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 3px white, 0 0 0 5px $bg-color-product-second;
+  }
 }
 
 .products__item-milkshakes {
   background-color: $bg-color-product-third;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &::before {
     display: inline-block;
     content: '';
     width: 249px;
     height: 252px;
-    background-image: url(../images/milkshakes1.png);
+    background-image: url('../images/milkshakes1.png');
     margin-top: -113px;
     background-position: center;
     background-repeat: no-repeat;
@@ -186,27 +233,32 @@
 
     @keyframes rotateY {
       0% {
-        transform: perspective(400px) rotateY(60deg);
+        transform: perspective(400px) rotateY(30deg);
       }
 
       100% {
-        transform: perspective(400px) rotateY(-60deg);
+        transform: perspective(400px) rotateY(-30deg);
       }
     }
 
     @media screen and (min-width: 768px) {
-      background-image: url(../images/milkshakes2.png);
+      background-image: url('../images/milkshakes2.png');
       width: 220px;
       height: 226px;
       margin-top: -104px;
     }
 
     @media screen and (min-width: 1280px) {
-      background-image: url(../images/milkshakes3.png);
+      background-image: url('../images/milkshakes3.png');
       width: 335px;
       height: 335px;
       margin-top: -210px;
     }
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 3px white, 0 0 0 5px $bg-color-product-third;
   }
 }
 
@@ -228,6 +280,18 @@
     margin-top: 38px;
     margin-bottom: 32px;
   }
+
+  // &::after {
+  //   display: block;
+  //   content: ' ';
+  //   height: 6px;
+  //   outline: 2px solid red;
+  //   margin: 30px 0;
+  //   background-image: url('../images/products.svg');
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  // }
 }
 
 .products__icon {
@@ -262,15 +326,118 @@
   }
 }
 
+.products__info-modal {
+  height: 200px;
+  font-size: 14px;
+  margin: 0;
+}
+
 .button__products {
   background-color: $main-hero-bg-color;
   border: none;
+  cursor: pointer;
 }
 
 .button__products-icecoffee {
   background-color: $bg-color-product-second;
+  border: none;
 }
 
 .button__products-milkshakes {
   background-color: $bg-color-product-third;
+  border: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  z-index: 99;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+}
+
+.backdrop--hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: initial;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: $hero-buttons-border;
+  padding: 40px;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    min-height: 609px;
+    width: 90%;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-height: 609px;
+    min-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 581px;
+    width: 528px;
+  }
+}
+
+.modal__icecream {
+  background-color: $main-hero-bg-color;
+}
+
+.modal__icecoffee {
+  background-color: $bg-color-product-second;
+}
+.modal__milkshakes {
+  background-color: $bg-color-product-third;
+}
+
+.modal__button-data {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 30px;
+  left: 48%;
+  border-radius: 50%;
+  align-items: center;
+  background-color: $main-bg-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: #ffffff;
+    // background: $main-hero-bg-color;
+  }
+}
+
+.modal__button-close {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal__foto {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  align-items: center;
 }
