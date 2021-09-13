@@ -51,100 +51,42 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(177, 75, 75, 0.6);
-  transition: all 250ms linear;
-  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  z-index: 99;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
-
+.backdrop--hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: initial;
+}
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 280px;
-  height: 420px;
-  border-radius: 4px;
-  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: $hero-buttons-border;
   padding: 40px;
-
-  z-index: 10;
-  box-shadow: inset 0 0 10px 5px rgba(92, 18, 18, 0.3);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.modal__close-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  background: var(--main-background-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.modal__suptitle {
-  font-family: var(--secondaryFont);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
   text-align: center;
-  text-transform: uppercase;
-  color: var(--informationColor);
-  margin-bottom: 15px;
-}
-
-.modal__title {
-  font-family: var(--secondaryFont);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--accentColor);
-}
-
-.modal__main-text {
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 1.62;
-  color: var(--secondaryTextColor);
-  margin-top: 26px;
-}
-
-.modal__details-text {
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 1.62;
-  color: var(--descriptionColor);
-
-  margin-top: 27px;
-  margin-bottom: 17px;
-}
-
-@media screen and (min-width: 320px) {
-  .box-about__suptitle {
-    font-family: var(--secondaryFont);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.16;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--informationColor);
-    margin-bottom: 15px;
+  @media screen and (max-width: 767px) {
+    min-height: 609px;
+    width: 90%;
   }
+  @media screen and (min-width: 768px) {
+    min-height: 609px;
+    min-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 581px;
+    width: 528px;
+  }
+}
 
   .box-about__information {
     padding-left: 30px;
