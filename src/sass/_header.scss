@@ -472,6 +472,13 @@
 
   overflow-y: scroll;
 
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width:50vw;
+    z-index: 99;
+    top: 0px;
+    left: 440px;
+  }
+
   @media (min-width: 1280px) {
     display: none;
   }
@@ -546,6 +553,8 @@
   margin: 60px 34px 19px 34px;
   cursor: pointer;
 
+  
+
   &::after {
     display: inline-block;
     margin-left: 8px;
@@ -568,6 +577,7 @@
   }
   @media screen and (min-width: 1280px) {
     margin-left: 13.62px;
+
   }
 }
 
@@ -673,7 +683,7 @@
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: unset; /*#fff  rgba(212, 124, 124, 0.7)*/
+  background-color: rgb(231, 150, 150); /*unset; /*#fff  rgba(212, 124, 124, 0.7)*/
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -787,11 +797,12 @@
 
   &__input {
     padding: 8px;
+    margin-top: 8px;
     font-family: inherit;
     font-size: inherit;
     background-color: unset;
     color: $contacts-button-color;
-    border: 1px solid #cea0bf;
+    border: 1px solid #c06ea5 /*#cea0bf*/;
     &:focus,
     &:hover {
       color: #cea0bf;
@@ -802,12 +813,13 @@
   }
 
   &__textarea {
+    margin-top: 8px;
     padding: 8px;
     font-family: inherit;
     font-size: inherit;
     resize: none;
     background-color: unset;
-    border: 1px solid #cea0bf;
+    border: 1px solid #c06ea5 /*#cea0bf*/;
   }
 
   &__btn {
