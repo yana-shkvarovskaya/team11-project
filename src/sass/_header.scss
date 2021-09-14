@@ -739,6 +739,7 @@
   text-shadow: 0 1px 0 #fff;
   opacity: 0.5;
   text-decoration: none;
+  position: absolute;
 }
 /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
 .close:focus,
@@ -747,6 +748,29 @@
   text-decoration: none;
   cursor: pointer;
   opacity: 0.75;
+}
+
+.modal__button-data-header {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  left: auto;
+  width: 30px;
+  height: 30px;
+  bottom: 30px;
+  border-radius: 50%;
+  align-items: center;
+  background-color: $main-bg-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: #ffffff;
+    // background: $main-hero-bg-color;
+  }
 }
 /* свойства для блока, содержащего основное содержимое окна */
 .modal-header-body {
