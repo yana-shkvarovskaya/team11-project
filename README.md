@@ -1,3 +1,13 @@
+Попова Анна	- Hero header (SCRUM MASTER)
+Горлач Женя	-	Products + модалка с видео для секции About
+Чередниченко Анна	-	About
+Шкваровская Яна	- Advantages ( TEAM LEAD )
+Мазуренко Лена - Gallery	
+Легойс Таня	-	Customer Reviews
+Рак Анна	-	Contacts
+Зубко Настя	-	Footer
+
+
 # Parcel boilerplate
 
 ## Скрытые файлы

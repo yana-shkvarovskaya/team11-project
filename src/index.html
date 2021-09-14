@@ -24,7 +24,8 @@
 <meta name="theme-color" content="#ffffff">
   </head>
   <body class="body">
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="to-up">Top</div>
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/header.html"></include>
     <include src="./partials/products.html"></include>
@@ -41,18 +42,41 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script>
-      window.onscroll = function() {scrollFunction()};
-      function scrollFunction() {
-          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-              document.getElementById("myBtn").style.display = "block";
-          } else {
-              document.getElementById("myBtn").style.display = "none";
-          }
-      }
-      function topFunction() {
-          document.body.scrollTop = 0; 
-          document.documentElement.scrollTop = 0; 
-      }
+document.addEventListener('DOMContentLoaded', () => {
+
+let toTopBtn = document.querySelector('.to-up');
+
+window.onscroll = function () {
+    if (window.pageYOffset > 580) {
+        toTopBtn.style.display = 'block'
+    } else {
+        toTopBtn.style.display = 'none'
+    }
+}
+
+// плавный скролл наверх 
+toTopBtn.addEventListener('click', function () {
+    window.scrollBy({
+        top: -document.documentElement.scrollHeight,
+        behavior: 'smooth'
+    });
+});
+});
           </script>
+          <!-- <script>
+
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+          </script> -->
   </body>
 </html>

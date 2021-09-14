@@ -111,7 +111,7 @@
       $quote-bg-color,
       $quote-bg-color 28px,
       $border-color 28px,
-      $border-color 29.5px
+      $border-color 29px
     );
 
     color: $main-text-color;
@@ -130,7 +130,7 @@
     }
     @media screen and (min-width: 1280px) {
       width: 750px;
-      padding: 0px 45px 7px 47px;
+      padding: 0px 30px 7px 30px;
       margin: 0 0 66px;
       font-size: 16px;
       line-height: 1.86;
@@ -142,7 +142,7 @@
       height: 40px;
       background-image: url('../images/reviews/quotes.png');
       background-size: contain;
-      opacity: 70%;
+      opacity: 0.7;
 
       position: absolute;
       top: -15px;
@@ -153,7 +153,7 @@
       }
       @media screen and (min-width: 1280px) {
         top: -15px;
-        left: 10px;
+        left: -5px;
       }
     }
 
