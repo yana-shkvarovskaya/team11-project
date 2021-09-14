@@ -56,14 +56,24 @@
                     </li>
                 </ul>
                 
-                <a class="menu-nav__modal" href="#openModal" title="modal">Buy now</a>
+                <button type="button" class="menu-nav__modal" data-modal-open-header>Buy now</button>
+                <!--<a class="menu-nav__modal" href="#openModal" title="modal">Buy now</a>-->
                         <!--Модальное окно-->
-                        <div id="openModal" class="modal-header">
+                        <div class="backdrop backdrop--hidden modal-header" data-modal-header>
+                      <!-- <div id="openModal" class="modal-header">-->
                             <div class="modal-header-dialog">
                                 <div class="modal-header-content">
                                     <div class="modal-header-header">
                                         <h3 class="modal-header-title">Make order</h3>
-                                        <a href="#close" title="Close" class="close">×</a>
+                                        <!--<a href="#close" title="Close" class="close">×</a>-->
+
+                                        <button data-modal-close-header class="close">
+                                            <svg class="modal__button-close">
+                                                <use href="./images/icon-close-products.svg#icon-close-black-18dp-2-1-1-1"></use>
+                                            </svg>
+                                        </button>
+
+
                                     </div>
                                     <div class="modal-header-body">
                                         <form class="modal-header__form">
@@ -106,7 +116,7 @@
                                                 <textarea class="modal-header__textarea" name="feedback" rows="5" placeholder="Type your message here..."></textarea>
                                             </label>
 
-                                            <button class="modal-header__btn icecream-box__btn" type="submit">Submit</button>
+                                            <!--<button class="modal-header__btn icecream-box__btn" type="submit">Submit</button>-->
                                         </form>
                                     </div>
                                 </div>
