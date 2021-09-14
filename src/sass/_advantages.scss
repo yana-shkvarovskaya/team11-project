@@ -158,8 +158,8 @@ color: $main-text-color;
  }
 }
 
-#myBtn {
-    display: none; 
+.to-up {
+     
     position: fixed; 
     bottom: 20px; 
     right: 30px; 
@@ -173,6 +173,14 @@ color: $main-text-color;
     border-radius: 30px; 
     font-size: 27px; 
     font-weight: 700;
+    display: none;
+
+    // position: fixed;
+    // bottom: 28px;
+    // right: 28px;
+    // display: none;
+    z-index: 2222;
+    // cursor: pointer;
 
     @media screen and (max-width:767px){
     bottom: 10px; 
@@ -182,7 +190,7 @@ color: $main-text-color;
 
 }
 
-#myBtn:hover {
+.to-up:hover {
     color: $main-bg-color;
     background-color: $text-title-color; 
 }
