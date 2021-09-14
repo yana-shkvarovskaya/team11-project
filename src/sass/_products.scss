@@ -104,7 +104,7 @@
     }
 
     @media screen and (max-width: 767px) {
-      max-width: 280px;
+      width: 100%;
       text-align: center;
       align-items: center;
       margin-left: auto;
@@ -280,18 +280,6 @@
     margin-top: 38px;
     margin-bottom: 32px;
   }
-
-  // &::after {
-  //   display: block;
-  //   content: ' ';
-  //   height: 6px;
-  //   outline: 2px solid red;
-  //   margin: 30px 0;
-  //   background-image: url('../images/products.svg');
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  // }
 }
 
 .products__icon {
@@ -308,7 +296,9 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $main-bg-color;
-  margin: 30px 39px 30px 41px;
+  margin: 30px 39px 0 41px;
+  height: 124px;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     margin: 30px 11px 40px 11px;
@@ -336,6 +326,12 @@
   background-color: $main-hero-bg-color;
   border: none;
   cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    bottom: 53px;
+    left: 45%;
+  }
 }
 
 .button__products-icecoffee {
@@ -366,8 +362,6 @@
   pointer-events: none;
   visibility: initial;
 }
-
-
 
 .modal__icecream {
   background-color: $main-hero-bg-color;
