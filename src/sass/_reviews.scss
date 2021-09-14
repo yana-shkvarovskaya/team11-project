@@ -1,4 +1,13 @@
 /* Styles of Swiper */
+.reviews {
+  padding-bottom: 86px;
+  @media screen and (min-width: 768px) {
+     padding-bottom: 119px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 132px;
+  }
+}
 
 .swiper {
   width: 280px;
@@ -101,7 +110,7 @@
     }
   }
 
-  &__text {
+  &__text-background {
     position: relative;
     padding: 0px 16px 6px 7px;
     margin: 0 auto 72px;
@@ -142,7 +151,7 @@
       height: 40px;
       background-image: url('../images/reviews/quotes.png');
       background-size: contain;
-      opacity: 0.7;
+      z-index: 0;
 
       position: absolute;
       top: -15px;
@@ -175,6 +184,11 @@
         bottom: -50px;
       }
     }
+  }
+
+  &__text {
+    z-index: 2;
+    position: relative;
   }
 
   &__author {

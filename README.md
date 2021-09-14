@@ -3,7 +3,7 @@
 Чередниченко Анна	-	About
 Шкваровская Яна	- Advantages ( TEAM LEAD )
 Мазуренко Лена - Gallery	
-Легойс Таня	-	Customer Reviews
+Легоис Таня	-	Customer Reviews
 Рак Анна	-	Contacts
 Зубко Настя	-	Footer
 
