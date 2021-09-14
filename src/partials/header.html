@@ -28,6 +28,7 @@
                         <div class="menu-container__mobile">
                             <!-- mobile-nav -->
                             <a class="mobile-modal" href="#openModal">Buy now</a>
+                            
                             <ul class="mobile-nav">
                                 <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--current" href="index.html"
                                         title="Home">Home</a></li>
@@ -56,72 +57,70 @@
                     </li>
                 </ul>
                 
-                <button type="button" class="menu-nav__modal" data-modal-open-header>Buy now</button>
-                <!--<a class="menu-nav__modal" href="#openModal" title="modal">Buy now</a>-->
-                        <!--Модальное окно-->
-                        <div class="backdrop backdrop--hidden modal-header" data-modal-header>
-                      <!-- <div id="openModal" class="modal-header">-->
-                            <div class="modal-header-dialog">
-                                <div class="modal-header-content">
-                                    <div class="modal-header-header">
-                                        <h3 class="modal-header-title">Make order</h3>
-                                        <!--<a href="#close" title="Close" class="close">×</a>-->
-
-                                        <button data-modal-close-header class="close">
-                                            <svg class="modal__button-close">
-                                                <use href="./images/icon-close-products.svg#icon-close-black-18dp-2-1-1-1"></use>
-                                            </svg>
-                                        </button>
-
-
-                                    </div>
-                                    <div class="modal-header-body">
-                                        <form class="modal-header__form">
-
-                                            <p class="modal-header__text">Choose a product</p>
-                                            <div class="modal-header__box">
-                                                <label class="modal-header__label">
-                                                    <input class="modal-header__input" type="checkbox" name="product" value="Icecream" checked />
-                                                    Icecream
-                                                </label>
-                                                <label class="modal-header__label">
-                                                    <input class="modal-header__input" type="checkbox" name="product" value="Ice coffee" checked />
-                                                    Ice coffee
-                                                </label>
-                                                <label class="modal-header__label">
-                                                    <input class="modal-header__input" type="checkbox" name="product" value="Milkshakes" />
-                                                    Milkshakes
-                                                </label>
-                                            </div>
-
-                                            <p class="modal-header__text">Should we call you back?</p>
-                                            <div class="modal-header__box">
-                                                <label class="modal-header__label">
-                                                    <input class="modal-header__input" type="radio" name="call back" value="Yes" checked />
-                                                    Yes
-                                                </label>
-                                                <label class="modal-header__label"> 
-                                                    <input class="modal-header__input" type="radio" name="call back" value="No" />
-                                                    No
-                                                </label>
-                                            </div>
-
-                                            <p class="modal-header__text">Leave your contacts</p>
-                                            <label class="modal-header__label modal-header__label-flexed">
-                                                Email
-                                                <input class="modal-header__input" type="email" name="email" placeholder="example@mail.com">
+ 
+                        <button type="button" class="button menu-nav__modal" data-modal-open-header>Buy now</button>
+                        <!-- BACKDROP -->
+                        <div class="backdrop backdrop--hidden" data-modal-header>
+                          <!--  <button data-modal-close-header class="close">
+                                <svg class="modal__button-close">
+                                    <use href="./images/icon-close-products.svg#icon-close-black-18dp-2-1-1-1"></use>
+                                </svg>-->
+                            </button>
+                            <div class="modal modal__about">
+                                <h3 class="products__name-header products__name-header">Make order</h3>
+                                
+                                <div class="modal-header-body">
+                                    <form class="modal-header__form">
+                                
+                                        <p class="modal-header__text">Choose a product</p>
+                                        <div class="modal-header__box">
+                                            <label class="modal-header__label">
+                                                <input class="modal-header__input" type="checkbox" name="product" value="Icecream" checked />
+                                                Icecream
                                             </label>
-                                            <label class="modal-header__label modal-header__label-flexed">
-                                                Feedback
-                                                <textarea class="modal-header__textarea" name="feedback" rows="5" placeholder="Type your message here..."></textarea>
+                                            <label class="modal-header__label">
+                                                <input class="modal-header__input" type="checkbox" name="product" value="Ice coffee" checked />
+                                                Ice coffee
                                             </label>
-
-                                            <!--<button class="modal-header__btn icecream-box__btn" type="submit">Submit</button>-->
-                                        </form>
-                                    </div>
+                                            <label class="modal-header__label">
+                                                <input class="modal-header__input" type="checkbox" name="product" value="Milkshakes" />
+                                                Milkshakes
+                                            </label>
+                                        </div>
+                                
+                                        <p class="modal-header__text">Should we call you back?</p>
+                                        <div class="modal-header__box">
+                                            <label class="modal-header__label">
+                                                <input class="modal-header__input" type="radio" name="call back" value="Yes" checked />
+                                                Yes
+                                            </label>
+                                            <label class="modal-header__label">
+                                                <input class="modal-header__input" type="radio" name="call back" value="No" />
+                                                No
+                                            </label>
+                                        </div>
+                                
+                                        <p class="modal-header__text">Leave your contacts</p>
+                                        <label class="modal-header__label modal-header__label-flexed">
+                                            Email
+                                            <input class="modal-header__input" type="email" name="email" placeholder="example@mail.com">
+                                        </label>
+                                        <label class="modal-header__label modal-header__label-flexed">
+                                            Feedback
+                                            <textarea class="modal-header__textarea" name="feedback" rows="5"
+                                                placeholder="Type your message here..."></textarea>
+                                        </label>
+                                
+                                        <button class="modal-header__btn icecream-box__btn" type="submit">Submit</button>
+                                    </form>
                                 </div>
+                                
+                                
+
                             </div>
                         </div>
+
+
 
             </nav>
             <div class="icecream">
