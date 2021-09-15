@@ -20,6 +20,7 @@
 .contacts__list {
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
     margin: -10px;
   }
   @media screen and (min-width: 1280px) {
@@ -30,7 +31,7 @@
 .contacts__item {
   margin: 0 auto;
   padding: 43px 21px 43px 20px;
-  max-width: 220px;
+
   background-color: $main-bg-color;
   box-shadow: $box-shadow-contacts;
   border-radius: 24px;
@@ -52,7 +53,12 @@
     &:nth-child(3) {
       transition: all 0.8s ease 0.6s;
     }
-
+    @media screen and (max-width: 479px) {
+      max-width: 80%;
+    }
+    @media screen and (min-width: 480px) {
+      max-width: 350px;
+    }
     @media screen and (max-width: 767px) {
       &:not(:last-child) {
         margin-bottom: 20px;
@@ -74,9 +80,15 @@
 
 .contacts__item:hover,
 .contacts__item:focus {
-  transform: scale(1.15);
+  transform: scale(1.01);
   background-color: $second-bg-color;
   box-shadow: 0px 5px 30px $second-hero-bg-color;
+  @media screen and (min-width: 768px) {
+    transform: scale(1.05);
+  }
+  @media screen and (min-width: 1280px) {
+    transform: scale(1.1);
+  }
 }
 .contacts__office {
   display: inline-flex;
@@ -210,24 +222,30 @@
     font-size: 16px;
   }
 }
+.contacts-buttons {
+  margin-top: 54px;
+  margin-bottom: 113px;
+
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 81px;
+    margin-bottom: 165px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 86px;
+  }
+}
 .contacts-buttons__box {
   display: flex;
   justify-content: center;
-  padding-top: 54px;
-  padding-bottom: 113px;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 81px;
-    padding-bottom: 165px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 86px;
-  }
 }
 .contacts-buttons__item {
   @media screen and (min-width: 768px) {
     display: inline-flex;
     flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1280px) {
   }
 }
 .contacts-buttons__primary {
@@ -324,7 +342,6 @@
   }
 }
 
-/*------------MODAL-WINDOW----------*/
 /*Styles om modal-Franshise*/
 .modal-franchise {
   background-color: $main-hero-bg-color;
