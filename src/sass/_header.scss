@@ -103,6 +103,11 @@
     align-items: center;
 
     color: $main-bg-color;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: $text-title-color;
+    }
   }
 
   &__link--current {
